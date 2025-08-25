@@ -56,10 +56,10 @@ export function OrderForm() {
   });
 
   const onSubmit = (values: FormValues) => {
-    console.log("Order submitted:", values);
+    console.log("Return request submitted:", values);
     toast({
-      title: "Order Submitted Successfully!",
-      description: "We'll contact you within 24 hours to confirm your order.",
+      title: "Return Request Submitted Successfully!",
+      description: "We'll contact you within 24 hours to process your return.",
     });
     setIsOpen(false);
     form.reset();
@@ -69,14 +69,14 @@ export function OrderForm() {
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
         <Button size="lg" className="w-full animate-pulse">
-          Submit Order Form
+          Return Order Form
         </Button>
       </DialogTrigger>
       <DialogContent className="max-w-md max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-xl font-bold">Complete Your Order</DialogTitle>
+          <DialogTitle className="text-xl font-bold">Return Your Order</DialogTitle>
           <DialogDescription>
-            Fill in your details to receive your Advance 3X Weight Loss Pack
+            Fill in your details to process your return request with 30-day money back guarantee
           </DialogDescription>
         </DialogHeader>
         
@@ -206,7 +206,7 @@ export function OrderForm() {
             />
             
             <Button type="submit" className="w-full" size="lg">
-              Confirm Order - ₹2,499
+              Submit Return Request
             </Button>
           </form>
         </Form>

@@ -2,7 +2,6 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import CountdownTimer from './CountdownTimer';
 import ProductGallery from './ProductGallery';
-import { OrderForm } from './OrderForm';
 
 const ProductCard = () => {
   return (
@@ -41,7 +40,9 @@ const ProductCard = () => {
       </div>
 
       <div className="space-y-3">
-        <OrderForm />
+        <Button variant="organic-cta" size="lg" className="w-full text-lg py-6">
+          🛒 ORDER NOW - GET INSTANT ACCESS
+        </Button>
         <Button variant="organic-outline" size="lg" className="w-full">
           💬 Chat with Expert
         </Button>
