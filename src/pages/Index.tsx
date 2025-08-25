@@ -2,7 +2,6 @@ import Header from '@/components/Header';
 import ProductCard from '@/components/ProductCard';
 import TrustBadges from '@/components/TrustBadges';
 import Testimonials from '@/components/Testimonials';
-import { OrderForm } from '@/components/OrderForm';
 import { Button } from '@/components/ui/button';
 import { Check, Star, Shield } from 'lucide-react';
 
@@ -135,21 +134,6 @@ const Index = () => {
           <Button variant="organic-cta" size="lg" className="text-lg px-12 py-6">
             🛒 CLAIM YOUR DISCOUNT NOW
           </Button>
-        </div>
-      </section>
-
-      {/* Return Form Section */}
-      <section className="py-16 bg-organic-green-lighter">
-        <div className="container mx-auto px-4">
-          <div className="max-w-md mx-auto text-center">
-            <h2 className="text-2xl font-bold text-organic-dark mb-4">
-              30-Day Money Back Guarantee
-            </h2>
-            <p className="text-muted-foreground mb-6">
-              Not satisfied with your purchase? We offer a hassle-free return process with full refund.
-            </p>
-            <OrderForm />
-          </div>
         </div>
       </section>
 
