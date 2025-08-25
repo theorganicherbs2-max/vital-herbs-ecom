@@ -42,9 +42,9 @@ const ProductCard = () => {
       <div className="bg-organic-green-lighter p-4 rounded-lg mb-6">
         <h3 className="font-semibold text-organic-dark mb-2">What's Included:</h3>
         <ul className="space-y-1 text-sm text-organic-dark">
-          <li>• Fat Burner Capsules (60 caps)</li>
-          <li>• Metabolism Booster Powder (30 servings)</li>
-          <li>• Detox Tea Blend (30 tea bags)</li>
+          <li>• Slim Fit (60 caps)</li>
+          <li>• Fat Burner (30 caps)</li>
+          <li>• 36 Herbs Detox Cleanser Powder (40 Servings)</li>
           <li>• Complete Diet Guide by Reema Bhatia</li>
           <li>• 30-Day Money Back Guarantee</li>
         </ul>
