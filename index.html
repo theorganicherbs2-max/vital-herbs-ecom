@@ -16,6 +16,68 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Critical CSS inlined for above-the-fold content -->
+    <style>
+      :root {
+        --background: 120 20% 98%;
+        --foreground: 120 10% 15%;
+        --organic-green: 120 60% 25%;
+        --organic-green-light: 120 40% 40%;
+        --organic-accent: 140 50% 30%;
+        --organic-warning: 35 90% 55%;
+        --gradient-hero: linear-gradient(135deg, hsl(120 60% 25%), hsl(140 50% 30%));
+        --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(120 20% 98%));
+        --shadow-organic: 0 10px 30px -10px hsl(120 60% 25% / 0.15);
+        --radius: 0.75rem;
+      }
+      
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        background: hsl(var(--background));
+        color: hsl(var(--foreground));
+        line-height: 1.6;
+      }
+      
+      .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+      
+      /* Critical above-the-fold styles */
+      .hero-section {
+        background: var(--gradient-hero);
+        min-height: 60vh;
+        padding: 2rem 0;
+      }
+      
+      .product-card {
+        background: var(--gradient-card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow-organic);
+        padding: 1.5rem;
+        margin: 1rem 0;
+      }
+      
+      .btn-primary {
+        background: var(--gradient-hero);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: var(--radius);
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+      
+      .btn-primary:hover { transform: translateY(-2px); }
+      
+      /* Prevent layout shift */
+      img { max-width: 100%; height: auto; }
+    </style>
+    
+    <!-- Load non-critical CSS asynchronously -->
+    <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/src/index.css"></noscript>
   </head>
 
   <body>
