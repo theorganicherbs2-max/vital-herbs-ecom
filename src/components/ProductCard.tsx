@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import CountdownTimer from './CountdownTimer';
-import weightLossCombo from '@/assets/weight-loss-combo.jpg';
+import ProductGallery from './ProductGallery';
 
 const ProductCard = () => {
   return (
@@ -18,18 +18,7 @@ const ProductCard = () => {
         </p>
       </div>
 
-      <div className="relative mb-6">
-        <img 
-          src={weightLossCombo} 
-          alt="Advance 3X Weight Loss Pack - 3 Natural Supplements"
-          className="w-full h-64 object-cover rounded-xl animate-float"
-        />
-        <div className="absolute top-4 right-4">
-          <Badge className="bg-organic-warning text-white">
-            SAVE ₹1000
-          </Badge>
-        </div>
-      </div>
+      <ProductGallery />
 
       <div className="text-center mb-6">
         <div className="flex items-center justify-center space-x-4 mb-4">
