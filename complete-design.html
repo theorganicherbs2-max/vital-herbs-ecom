@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Your Body Naturally & Safely - The Organic Herbs</title>
+    <meta name="description" content="Get the proven 3X Weight Loss Combo that has helped thousands lose weight without harmful chemicals or side effects. 100% Natural supplements.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="weight loss, natural supplements, organic herbs, fat burner, detox, slim fit">
+    <meta name="author" content="The Organic Herbs">
+    <meta property="og:title" content="Transform Your Body Naturally & Safely - The Organic Herbs">
+    <meta property="og:description" content="Get the proven 3X Weight Loss Combo that has helped thousands lose weight without harmful chemicals or side effects.">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: 'hsl(120 20% 98%)',
+                        foreground: 'hsl(120 10% 15%)',
+                        card: 'hsl(0 0% 100%)',
+                        'card-foreground': 'hsl(120 10% 15%)',
+                        primary: 'hsl(120 60% 25%)',
+                        'primary-foreground': 'hsl(0 0% 98%)',
+                        secondary: 'hsl(120 30% 92%)',
+                        'secondary-foreground': 'hsl(120 10% 15%)',
+                        muted: 'hsl(120 20% 95%)',
+                        'muted-foreground': 'hsl(120 5% 45%)',
+                        accent: 'hsl(140 50% 30%)',
+                        'accent-foreground': 'hsl(0 0% 98%)',
+                        border: 'hsl(120 20% 85%)',
+                        'organic-green': 'hsl(120 60% 25%)',
+                        'organic-green-light': 'hsl(120 40% 40%)',
+                        'organic-green-lighter': 'hsl(120 30% 85%)',
+                        'organic-dark': 'hsl(120 15% 20%)',
+                        'organic-accent': 'hsl(140 50% 30%)',
+                        'organic-warning': 'hsl(35 90% 55%)',
+                        'organic-success': 'hsl(140 60% 35%)'
+                    },
+                    backgroundImage: {
+                        'gradient-hero': 'linear-gradient(135deg, hsl(120 60% 25%), hsl(140 50% 30%))',
+                        'gradient-card': 'linear-gradient(145deg, hsl(0 0% 100%), hsl(120 20% 98%))',
+                        'gradient-cta': 'linear-gradient(135deg, hsl(140 50% 30%), hsl(120 60% 25%))'
+                    },
+                    boxShadow: {
+                        'organic': '0 10px 30px -10px hsl(120 60% 25% / 0.15)',
+                        'card-organic': '0 4px 20px -4px hsl(120 30% 50% / 0.12)',
+                        'glow': '0 0 40px hsl(120 60% 25% / 0.2)'
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite alternate'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        },
+                        'pulse-glow': {
+                            'from': { boxShadow: '0 0 20px hsl(120 60% 25% / 0.5)' },
+                            'to': { boxShadow: '0 0 30px hsl(120 60% 25% / 0.8)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Additional custom styles */
+        .btn-organic-cta {
+            background: linear-gradient(135deg, hsl(140 50% 30%), hsl(120 60% 25%));
+            color: white;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-organic-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px hsl(120 60% 25% / 0.3);
+        }
+        
+        .btn-organic-outline {
+            background: transparent;
+            color: hsl(120 60% 25%);
+            border: 2px solid hsl(120 60% 25%);
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-organic-outline:hover {
+            background: hsl(120 60% 25%);
+            color: white;
+        }
+        
+        .countdown-timer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: hsl(35 90% 55%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .countdown-number {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 1.125rem;
+        }
+        
+        /* Form styles */
+        .form-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid hsl(120 20% 85%);
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: hsl(120 60% 25%);
+            box-shadow: 0 0 0 3px hsl(120 60% 25% / 0.1);
+        }
+        
+        .form-label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+            color: hsl(120 15% 20%);
+        }
+    </style>
+</head>
+<body class="min-h-screen" style="background-color: hsl(120 20% 98%);">
+    <!-- Header -->
+    <header class="bg-gradient-hero text-white">
+        <!-- Top notification bar -->
+        <div class="text-center py-2 px-4" style="background-color: hsl(35 90% 55%);">
+            <p class="text-sm font-medium">
+                🌟 <strong>REEMA BHATIA</strong> - Certified Weight Loss Mentor | Transform Your Life Today!
+            </p>
+        </div>
+        
+        <!-- Main header -->
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold">The Organic Herbs</h1>
+                        <p class="text-sm opacity-90">Natural Wellness Solutions</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-6">
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <span class="text-sm">+91 9870220559</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <span class="text-sm">info@organicherbs.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <main>
+        <section class="py-16" style="background: linear-gradient(to bottom, hsl(120 30% 85%), hsl(120 20% 98%));">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6" style="color: hsl(120 15% 20%);">
+                        Transform Your Body<br />
+                        <span style="color: hsl(120 60% 25%);">Naturally & Safely</span>
+                    </h1>
+                    <p class="text-xl mb-8 max-w-2xl mx-auto" style="color: hsl(120 5% 45%);">
+                        Get the proven 3X Weight Loss Combo that has helped thousands lose weight without harmful chemicals or side effects
+                    </p>
+                    
+                    <div class="flex flex-wrap justify-center gap-4 mb-8">
+                        <div class="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-card-organic">
+                            <svg class="w-5 h-5" style="color: hsl(140 60% 35%)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-sm font-medium">100% Natural</span>
+                        </div>
+                        <div class="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-card-organic">
+                            <svg class="w-5 h-5" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                            <span class="text-sm font-medium">4.9/5 Rating</span>
+                        </div>
+                        <div class="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-card-organic">
+                            <svg class="w-5 h-5" style="color: hsl(120 60% 25%)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                            <span class="text-sm font-medium">Money Back Guarantee</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card -->
+                <div class="bg-gradient-card rounded-2xl shadow-organic p-8 max-w-2xl mx-auto">
+                    <div class="text-center mb-6">
+                        <div class="inline-block px-3 py-1 rounded-full text-white mb-4" style="background-color: hsl(140 60% 35%);">
+                            🔥 LIMITED TIME OFFER
+                        </div>
+                        <h2 class="text-3xl font-bold mb-2" style="color: hsl(120 15% 20%);">
+                            Advance 3X Weight Loss Pack
+                        </h2>
+                        <p style="color: hsl(120 5% 45%);">
+                            3 Powerful Natural Supplements in 1 Complete Combo
+                        </p>
+                    </div>
+
+                    <!-- Product Gallery -->
+                    <div class="relative mb-6">
+                        <div class="relative mb-4">
+                            <img 
+                                id="mainProductImage"
+                                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop"
+                                alt="Advance 3X Weight Loss Pack - Complete Combo"
+                                class="w-full h-64 object-contain rounded-xl animate-float bg-white"
+                            />
+                            <div class="absolute top-4 right-4">
+                                <div class="px-2 py-1 text-white text-sm rounded" style="background-color: hsl(35 90% 55%);">
+                                    SAVE ₹1000
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-2 overflow-x-auto pb-2">
+                            <button onclick="changeImage(0)" class="product-thumb flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 border-organic-green transition-all">
+                                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=64&h=64&fit=crop" alt="Complete Combo Pack" class="w-full h-full object-contain bg-white" />
+                            </button>
+                            <button onclick="changeImage(1)" class="product-thumb flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 border-gray-200 transition-all">
+                                <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?w=64&h=64&fit=crop" alt="36 Herbs Detox Cleanser" class="w-full h-full object-contain bg-white" />
+                            </button>
+                            <button onclick="changeImage(2)" class="product-thumb flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 border-gray-200 transition-all">
+                                <img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=64&h=64&fit=crop" alt="Fat Burner (30 Caps)" class="w-full h-full object-contain bg-white" />
+                            </button>
+                            <button onclick="changeImage(3)" class="product-thumb flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 border-gray-200 transition-all">
+                                <img src="https://images.unsplash.com/photo-1505576391880-b3f9d713dc4f?w=64&h=64&fit=crop" alt="Slim Fit (60 Caps)" class="w-full h-full object-contain bg-white" />
+                            </button>
+                        </div>
+                        
+                        <div class="text-center mt-2">
+                            <p id="imageTitle" class="text-sm" style="color: hsl(120 5% 45%);">
+                                Complete Combo Pack
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="text-center mb-6">
+                        <div class="flex items-center justify-center space-x-4 mb-4">
+                            <span class="text-2xl line-through" style="color: hsl(120 5% 45%);">₹3,499</span>
+                            <span class="text-4xl font-bold" style="color: hsl(120 60% 25%);">₹2,499</span>
+                        </div>
+                        
+                        <!-- Countdown Timer -->
+                        <div class="countdown-timer">
+                            <span class="text-sm">OFFER ENDS IN:</span>
+                            <div class="flex items-center space-x-1 text-lg">
+                                <span id="minutes" class="countdown-number">59</span>
+                                <span>:</span>
+                                <span id="seconds" class="countdown-number">59</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-lg mb-6" style="background-color: hsl(120 30% 85%);">
+                        <h3 class="font-semibold mb-2" style="color: hsl(120 15% 20%);">What's Included:</h3>
+                        <ul class="space-y-1 text-sm" style="color: hsl(120 15% 20%);">
+                            <li>• Slim Fit (60 caps)</li>
+                            <li>• Fat Burner (30 caps)</li>
+                            <li>• 36 Herbs Detox Cleanser Powder (40 Servings)</li>
+                            <li>• Complete Diet Guide by Reema Bhatia</li>
+                            <li>• 30-Day Money Back Guarantee</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-3">
+                        <button class="btn-organic-cta w-full text-lg py-6">
+                            🛒 ORDER NOW - GET INSTANT ACCESS
+                        </button>
+                        <button class="btn-organic-outline w-full">
+                            💬 Chat with Expert
+                        </button>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <p class="text-xs" style="color: hsl(120 5% 45%);">
+                            ✓ Secure Payment • ✓ Fast Delivery • ✓ Expert Support
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Trust Badges -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+                    <div class="flex flex-col items-center text-center p-4 bg-gradient-card rounded-lg shadow-card-organic">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-2" style="background-color: hsl(120 30% 85%);">
+                            <svg class="w-6 h-6" style="color: hsl(120 60% 25%)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-sm" style="color: hsl(120 15% 20%);">100% Natural</h3>
+                        <p class="text-xs" style="color: hsl(120 5% 45%);">Certified Organic</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center text-center p-4 bg-gradient-card rounded-lg shadow-card-organic">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-2" style="background-color: hsl(120 30% 85%);">
+                            <svg class="w-6 h-6" style="color: hsl(120 60% 25%)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-sm" style="color: hsl(120 15% 20%);">Expert Approved</h3>
+                        <p class="text-xs" style="color: hsl(120 5% 45%);">By Reema Bhatia</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center text-center p-4 bg-gradient-card rounded-lg shadow-card-organic">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-2" style="background-color: hsl(120 30% 85%);">
+                            <svg class="w-6 h-6" style="color: hsl(120 60% 25%)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-sm" style="color: hsl(120 15% 20%);">Free Delivery</h3>
+                        <p class="text-xs" style="color: hsl(120 5% 45%);">Pan India</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center text-center p-4 bg-gradient-card rounded-lg shadow-card-organic">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-2" style="background-color: hsl(120 30% 85%);">
+                            <svg class="w-6 h-6" style="color: hsl(120 60% 25%)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-sm" style="color: hsl(120 15% 20%);">30-Day Guarantee</h3>
+                        <p class="text-xs" style="color: hsl(120 5% 45%);">Money Back</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-16" style="background-color: hsl(120 30% 85%);">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4" style="color: hsl(120 15% 20%);">
+                        What Our Customers Say
+                    </h2>
+                    <p style="color: hsl(120 5% 45%);">
+                        Join thousands of satisfied customers who transformed their lives
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-white rounded-xl p-6 shadow-card-organic">
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl mr-3">👩‍💼</span>
+                            <div>
+                                <h3 class="font-semibold" style="color: hsl(120 15% 20%);">Priya Sharma</h3>
+                                <p class="text-sm" style="color: hsl(120 5% 45%);">Mumbai</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex mb-3">
+                            <svg class="w-4 h-4" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                            <svg class="w-4 h-4" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                            <svg class="w-4 h-4" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                            <svg class="w-4 h-4" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                            <svg class="w-4 h-4" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                        </div>
+                        
+                        <p style="color: hsl(120 15% 20%)" class="italic">"Lost 8 kg in just 30 days! The combo pack is amazing and Reema's guidance was perfect."</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-card-organic">
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl mr-3">👨‍💻</span>
+                            <div>
+                                <h3 class="font-semibold" style="color: hsl(120 15% 20%);">Rahul Gupta</h3>
+                                <p class="text-sm" style="color: hsl(120 5% 45%);">Delhi</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex mb-3">
+                            <svg class="w-4 h-4" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                            <svg class="w-4 h-4" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                            <svg class="w-4 h-4" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                            <svg class="w-4 h-4" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                            <svg class="w-4 h-4" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                        </div>
+                        
+                        <p style="color: hsl(120 15% 20%)" class="italic">"Finally found something that works! No side effects, completely natural. Highly recommended!"</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-card-organic">
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl mr-3">👩‍⚕️</span>
+                            <div>
+                                <h3 class="font-semibold" style="color: hsl(120 15% 20%);">Anita Patel</h3>
+                                <p class="text-sm" style="color: hsl(120 5% 45%);">Bangalore</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex mb-3">
+                            <svg class="w-4 h-4" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                            <svg class="w-4 h-4" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                            <svg class="w-4 h-4" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                            <svg class="w-4 h-4" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                            <svg class="w-4 h-4" style="color: hsl(35 90% 55%)" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                        </div>
+                        
+                        <p style="color: hsl(120 15% 20%)" class="italic">"My energy levels are through the roof! Lost 6 kg and feeling more confident than ever."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center mb-12" style="color: hsl(120 15% 20%);">
+                        Why Choose Our 3X Weight Loss Pack?
+                    </h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style="background-color: hsl(120 60% 25%);">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2" style="color: hsl(120 15% 20%);">Boosts Metabolism by 300%</h3>
+                                    <p style="color: hsl(120 5% 45%);">Natural ingredients that supercharge your body's fat-burning process</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style="background-color: hsl(120 60% 25%);">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2" style="color: hsl(120 15% 20%);">Reduces Cravings</h3>
+                                    <p style="color: hsl(120 5% 45%);">Controls hunger and stops emotional eating naturally</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style="background-color: hsl(120 60% 25%);">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2" style="color: hsl(120 15% 20%);">Detoxifies Body</h3>
+                                    <p style="color: hsl(120 5% 45%);">Removes toxins and improves overall health & energy</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style="background-color: hsl(140 50% 30%);">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2" style="color: hsl(120 15% 20%);">No Side Effects</h3>
+                                    <p style="color: hsl(120 5% 45%);">100% natural herbs with zero harmful chemicals</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style="background-color: hsl(140 50% 30%);">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2" style="color: hsl(120 15% 20%);">Expert Guidance</h3>
+                                    <p style="color: hsl(120 5% 45%);">Personal support from certified weight loss mentor Reema Bhatia</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style="background-color: hsl(140 50% 30%);">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2" style="color: hsl(120 15% 20%);">Guaranteed Results</h3>
+                                    <p style="color: hsl(120 5% 45%);">30-day money back guarantee if you're not satisfied</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 bg-gradient-hero">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-white mb-4">
+                    Don't Wait - Limited Time Offer!
+                </h2>
+                <p class="text-xl text-white opacity-90 mb-8">
+                    Join thousands who have already transformed their lives
+                </p>
+                <button class="btn-organic-cta text-lg px-12 py-6">
+                    🛒 CLAIM YOUR DISCOUNT NOW
+                </button>
+            </div>
+        </section>
+
+        <!-- Return Form Section -->
+        <section class="py-16" style="background-color: hsl(120 30% 85%);">
+            <div class="container mx-auto px-4">
+                <div class="max-w-md mx-auto text-center">
+                    <h2 class="text-2xl font-bold mb-4" style="color: hsl(120 15% 20%);">
+                        30-Day Money Back Guarantee
+                    </h2>
+                    <p class="mb-6" style="color: hsl(120 5% 45%);">
+                        Not satisfied with your purchase? We offer a hassle-free return process with full refund.
+                    </p>
+                    
+                    <!-- Return Order Form -->
+                    <div class="bg-white p-6 rounded-xl shadow-card-organic">
+                        <h3 class="text-lg font-semibold mb-4" style="color: hsl(120 15% 20%);">Return Order Form</h3>
+                        <form id="returnForm" class="space-y-4">
+                            <div>
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" required class="form-input">
+                            </div>
+                            <div>
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" required class="form-input">
+                            </div>
+                            <div>
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required class="form-input">
+                            </div>
+                            <div>
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" id="address" name="address" required class="form-input">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label for="city" class="form-label">City</label>
+                                    <input type="text" id="city" name="city" required class="form-input">
+                                </div>
+                                <div>
+                                    <label for="state" class="form-label">State</label>
+                                    <input type="text" id="state" name="state" required class="form-input">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="pincode" class="form-label">PIN Code</label>
+                                <input type="text" id="pincode" name="pincode" required class="form-input">
+                            </div>
+                            <div>
+                                <label for="instructions" class="form-label">Special Instructions (Optional)</label>
+                                <textarea id="instructions" name="instructions" rows="3" class="form-input" placeholder="Any special instructions for return..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-organic-cta w-full">
+                                Submit Return Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 text-white" style="background-color: hsl(120 15% 20%);">
+            <div class="container mx-auto px-4 text-center">
+                <p class="mb-4">© 2024 The Organic Herbs. All rights reserved.</p>
+                <p class="text-sm opacity-70">
+                    Disclaimer: Results may vary. Consult your healthcare provider before starting any weight loss program.
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Product image gallery functionality
+        const productImages = [
+            {
+                src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
+                alt: "Advance 3X Weight Loss Pack - Complete Combo",
+                title: "Complete Combo Pack"
+            },
+            {
+                src: "https://images.unsplash.com/photo-1559181567-c3190ca9959b?w=400&h=300&fit=crop", 
+                alt: "36 Herbs Detox Cleanser - Natural Body Detox",
+                title: "36 Herbs Detox Cleanser"
+            },
+            {
+                src: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=400&h=300&fit=crop",
+                alt: "Fat Burner - Advance Ultra Fat Loss Formulation", 
+                title: "Fat Burner (30 Caps)"
+            },
+            {
+                src: "https://images.unsplash.com/photo-1505576391880-b3f9d713dc4f?w=400&h=300&fit=crop",
+                alt: "Slim Fit - Advance Ultra Fat Loss Formulation",
+                title: "Slim Fit (60 Caps)"
+            }
+        ];
+
+        function changeImage(index) {
+            const mainImage = document.getElementById('mainProductImage');
+            const imageTitle = document.getElementById('imageTitle');
+            const thumbnails = document.querySelectorAll('.product-thumb');
+            
+            // Update main image
+            mainImage.src = productImages[index].src;
+            mainImage.alt = productImages[index].alt;
+            imageTitle.textContent = productImages[index].title;
+            
+            // Update thumbnail borders
+            thumbnails.forEach((thumb, i) => {
+                if (i === index) {
+                    thumb.style.borderColor = 'hsl(120 60% 25%)';
+                    thumb.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
+                } else {
+                    thumb.style.borderColor = '#e5e7eb';
+                    thumb.style.boxShadow = 'none';
+                }
+            });
+        }
+
+        // Countdown timer functionality
+        let minutes = 59;
+        let seconds = 59;
+
+        function updateCountdown() {
+            const minutesElement = document.getElementById('minutes');
+            const secondsElement = document.getElementById('seconds');
+            
+            if (seconds === 0) {
+                if (minutes === 0) {
+                    // Reset timer
+                    minutes = 59;
+                    seconds = 59;
+                } else {
+                    minutes--;
+                    seconds = 59;
+                }
+            } else {
+                seconds--;
+            }
+            
+            minutesElement.textContent = minutes.toString().padStart(2, '0');
+            secondsElement.textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Start countdown
+        setInterval(updateCountdown, 1000);
+
+        // Form submission
+        document.getElementById('returnForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your return request. We will contact you within 24 hours to arrange the return process.');
+        });
+
+        // Initialize first image as active
+        changeImage(0);
+    </script>
+</body>
+</html>
