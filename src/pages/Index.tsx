@@ -141,7 +141,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-md mx-auto text-center">
             <h2 className="text-2xl font-bold text-organic-dark mb-4">
-              30-Day Money Back Guarantee
+              15-Day Money Back Guarantee
             </h2>
             <p className="text-muted-foreground mb-6">
               Not satisfied with your purchase? We offer a hassle-free return process with full refund.
