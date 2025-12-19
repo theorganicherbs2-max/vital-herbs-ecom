@@ -2,10 +2,8 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import CountdownTimer from './CountdownTimer';
 import ProductGallery from './ProductGallery';
-
 const ProductCard = () => {
-  return (
-    <div className="bg-gradient-card rounded-2xl shadow-organic p-8 max-w-2xl mx-auto">
+  return <div className="bg-gradient-card rounded-2xl shadow-organic p-8 max-w-2xl mx-auto">
       <div className="text-center mb-6">
         <Badge className="bg-organic-success text-white mb-4">
           🔥 LIMITED TIME OFFER
@@ -35,7 +33,7 @@ const ProductCard = () => {
           <li>• Fat Burner (30 caps)</li>
           <li>• 36 Herbs Detox Cleanser Powder (40 Servings)</li>
           <li>• Complete Diet Guide by Reema Bhatia</li>
-          <li>• 30-Day Money Back Guarantee</li>
+          <li>• 15-Day Money Back Guarantee</li>
         </ul>
       </div>
 
@@ -53,8 +51,6 @@ const ProductCard = () => {
           ✓ Secure Payment • ✓ Fast Delivery • ✓ Expert Support
         </p>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default ProductCard;

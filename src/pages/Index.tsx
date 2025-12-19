@@ -5,10 +5,8 @@ import Testimonials from '@/components/Testimonials';
 import { OrderForm } from '@/components/OrderForm';
 import { Button } from '@/components/ui/button';
 import { Check, Star, Shield } from 'lucide-react';
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
@@ -39,7 +37,7 @@ const Index = () => {
             </div>
           </div>
           
-          <ProductCard />
+          <ProductCard className="bg-neutral-100" />
           <TrustBadges />
         </div>
       </section>
@@ -162,8 +160,6 @@ const Index = () => {
           </p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;

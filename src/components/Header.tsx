@@ -1,8 +1,6 @@
 import { Leaf, Phone, Mail } from 'lucide-react';
-
 const Header = () => {
-  return (
-    <header className="bg-gradient-hero text-white">
+  return <header className="bg-gradient-hero text-white">
       {/* Top notification bar */}
       <div className="bg-organic-warning text-center py-2 px-4">
         <p className="text-sm font-medium">
@@ -30,13 +28,11 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="w-4 h-4" />
-              <span className="text-sm">info@organicherbs.com</span>
+              <span className="text-sm">support@organicherbs.com</span>
             </div>
           </div>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;
