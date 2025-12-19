@@ -130,7 +130,7 @@ const Index = () => {
           <p className="text-xl text-white/90 mb-8">
             Join thousands who have already transformed their lives
           </p>
-          <Button variant="organic-cta" size="lg" className="text-lg px-12 py-6">
+          <Button variant="organic-cta" size="lg" className="text-sm sm:text-lg px-6 sm:px-12 py-4 sm:py-6">
             🛒 CLAIM YOUR DISCOUNT NOW
           </Button>
         </div>

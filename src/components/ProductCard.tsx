@@ -38,10 +38,10 @@ const ProductCard = () => {
       </div>
 
       <div className="space-y-3">
-        <Button variant="organic-cta" size="lg" className="w-full text-lg py-6">
+        <Button variant="organic-cta" size="lg" className="w-full text-sm sm:text-lg px-4 sm:px-8 py-4 sm:py-6">
           🛒 ORDER NOW - GET INSTANT ACCESS
         </Button>
-        <Button variant="organic-outline" size="lg" className="w-full">
+        <Button variant="organic-outline" size="lg" className="w-full text-sm sm:text-base">
           💬 Chat with Expert
         </Button>
       </div>
