@@ -19,7 +19,7 @@ const TrustBadges = () => {
     },
     {
       icon: RotateCcw,
-      title: "30-Day Guarantee",
+      title: "15-Day Guarantee",
       description: "Money Back"
     }
   ];

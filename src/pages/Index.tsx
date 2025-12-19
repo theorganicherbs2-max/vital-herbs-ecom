@@ -37,7 +37,7 @@ const Index = () => {
             </div>
           </div>
           
-          <ProductCard className="bg-neutral-100" />
+          <ProductCard />
           <TrustBadges />
         </div>
       </section>
