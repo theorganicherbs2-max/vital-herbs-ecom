@@ -112,7 +112,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-organic-dark mb-2">Guaranteed Results</h3>
-                    <p className="text-muted-foreground">30-day money back guarantee if you're not satisfied</p>
+                    <p className="text-muted-foreground">15-day money back guarantee if you're not satisfied</p>
                   </div>
                 </div>
               </div>
